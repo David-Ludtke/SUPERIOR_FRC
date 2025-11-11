@@ -1,2 +1,3 @@
 # SUPERIOR_FRC
-the page for robotics at Superior Highschool in Wisconsin
+# THE OFICAIL PAGE FOR SUPERIOR FRC IN SUPERIOR WI
+**Right Now Only David and Dexter are allowed to approve pull requests for now it may change later**
