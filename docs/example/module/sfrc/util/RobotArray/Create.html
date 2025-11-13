@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>sfrc::Util::RobotArray::Create</title>
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            <style>
+                body {
+                    background-color: grey;
+                    color: white;
+                    font-family: 'Roboto';
+                }
+                a {
+                    color: inherit;
+                }
+            </style>
+        </head>
+        <body>
+            <a href="../../../../../home.html" style="font-size: 20px">Home</a>
+            <h3>sfrc::Util::RobotArray::Create:</h3>
+                <h4>static RobotArray Create()</h4>
+                <p>Creates an empty RobotArray and <br>
+                    Returns it to the caller <br>
+                    this function cannot fail</p>
+                <h5>Examples:</h5>
+                <ul>
+                    <li><pre><code>
+    sfrc::Util::RobotArray&lt;int&gt; myArray = sfrc::Util::RobotArray&lt;int&gt;::Create();
+    //creates an empty RobotArray of integers
+    myArray.Size(); //returns 0
+                    </li></pre></code>
+                    <li><pre><code>
+    sfrc::Util::RobotArray&lt;std::string&gt; strArray = sfrc::Util::RobotArray&lt;std::string&gt;::Create();
+    //creates an empty RobotArray of strings
+    strArray.Size(); //returns 0
+                    </code></pre></li>
+                </ul>
+        </body>
+    </html>
