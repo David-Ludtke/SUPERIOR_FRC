@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>sfrc::util::RobotArray::PushBackArray</title>
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            <style>
+                body {
+                    background-color: grey;
+                    color: white;
+                    font-family: 'Roboto';
+                }
+                a {
+                    color: inherit;
+                }
+            </style>
+        </head>
+        <body>
+            <a href="../../../../../home.html" style="font-size: 20px">Home</a>
+            <h3>sfrc::util::RobotArray::PushBackArray:</h3>
+                <h4>void PushBackArray(T* array, size_t length)</h4>
+                <p>as the name says it pushes back <br>
+                    a c style array into the RobotArray <br>
+                    takes in a pointer to the array and <br>
+                    the length of said array <br>
+                    the array is added to the end of the RobotArray <br>
+                    this function does not check the validity of the pointer <br>
+                    nor the length provided the caller is responsible for ensuring <br>
+                    the length is non 0 and the pointer is valid <br>
+                    this function may cause undefined behavior if <br>
+                    invalid parameters are provided <br>
+                    the function may fail the program if memory cannot be allocated <br>
+                </p>
+                <h5>Examples:</h5>
+                <ul>
+                    <li><pre><code>
+    sfrc::Util::RobotArray&lt;int&gt; myArray = sfrc::Util::RobotArray&lt;int&gt;::Create();
+    int arr[] = {1, 2, 3, 4, 5};
+    myArray.PushBackArray(arr, 5);
+    //myArray now contains {1, 2, 3, 4, 5};
+                    </li></pre></code>
+                    <li><pre><code>
+    sfrc::Util::RobotArray&lt;std::string&gt; strArray = sfrc::Util::RobotArray&lt;std::string&gt;::OfVec({"hello", "world"});
+    const char* arr[] = {"foo", "bar", "baz"};
+    strArray.PushBackArray(arr, 3);
+    //strArray now contains {"hello", "world", "foo", "bar", "baz"};
+                    </code></pre></li>
+                </ul>
+        </body>
+    </html>
