@@ -1,6 +1,5 @@
 .small-button {
     font-family: inherit;
-    color: #FBF7F5;
     font-weight: 700;
     font-size: 15px;
     font-style: normal;
@@ -8,7 +7,7 @@
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 0px;
-    padding: 5px 2px;
+    padding: 5px 10px;
     min-width: 100px;
     min-height: 30px;
     border: none;
@@ -17,7 +16,6 @@
 }
 .medium-button {
     font-family: inherit;
-    color: #FBF7F5;
     font-weight: 700;
     font-size: 30px;
     font-style: normal;
@@ -25,24 +23,12 @@
     margin-bottom: 15px;
     margin-left: 15px;
     margin-right: 0px;
-    padding: 10px 5px;
+    padding: 10px 10px;
     min-width: 200px;
     min-height: 60px;
     border: none;
     border-radius: 7px;
     box-sizing: border-box;
-}
-.grey {
-    background-color: grey;
-}
-.white {
-    background-color: white;
-}
-.black {
-    background-color: black;
-}
-.red {
-    background-color: red;
 }
 .tight {
     margin-top: 5px;
@@ -53,4 +39,14 @@
 }
 .tight-bottom {
     margin-bottom: 5px;
+}
+.nav-button {
+    background-color: grey;
+    color: #FBF7F5;
+    cursor: pointer; 
+    transition: background-color 0.1s, color 0.1s;
+}
+.nav-button:hover {
+    background-color: rgb(66, 66, 66);
+    color: rgb(151, 151, 151);
 }
