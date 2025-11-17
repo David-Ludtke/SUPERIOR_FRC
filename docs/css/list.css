@@ -1,0 +1,25 @@
+ul {
+    padding-left: 0px;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+li {
+    font-size: 35px;
+    margin-left: 40px;
+    color: rgb(197, 159, 159);
+    position: relative;
+}
+ul li::before {
+    content: "•";
+    color: rgb(197, 159, 159);
+    font-size: 30px; 
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+.first {
+    margin-top: 5px;
+}
+.last {
+    margin-bottom: 0px;
+}

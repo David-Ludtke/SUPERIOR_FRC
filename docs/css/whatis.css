@@ -1,0 +1,27 @@
+.function {
+    color: blue;
+    font-weight: 700;
+    text-decoration: none;
+}
+.namespace {
+    color: orangered;
+    font-weight: 700;
+    text-decoration: none;
+}
+.class {
+    color: burlywood;
+    font-weight: 700;
+    text-decoration: none;
+}
+.function:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.namespace:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.class:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
