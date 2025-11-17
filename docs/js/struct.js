@@ -15,5 +15,5 @@ Array.from(namespaces).forEach((namespace, _) => {
     namespace.setAttribute('href', './whatis/anamespace.html'); //replace the dot with the nessary path to get to the html folder
 });
 Array.from(classes).forEach((classs, _) => {
-    classs.setAttribute('href', './whatis/class.html'); //replace the dot with the nessary path to get to the html folder
+    classs.setAttribute('href', './whatis/aclass.html'); //replace the dot with the nessary path to get to the html folder
 });

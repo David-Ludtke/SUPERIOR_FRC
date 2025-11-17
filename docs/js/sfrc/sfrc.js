@@ -15,5 +15,5 @@ Array.from(namespaces).forEach((namespace, _) => {
     namespace.setAttribute('href', '../whatis/anamespace.html');
 });
 Array.from(classes).forEach((classs, _) => {
-    classs.setAttribute('href', '../whatis/class.html');
+    classs.setAttribute('href', '../whatis/aclass.html');
 });
