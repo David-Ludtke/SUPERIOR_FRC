@@ -2,21 +2,28 @@
     <html lang="english">
         <head>
             <title>Documentation Home</title>
-            <!--link Ubuntu font-->
-            <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-            <!--import font 'ubuntu' with weights of 400, 500, 700 and itallic's of each-->
             <meta charset="utf-8">
-            <link rel="stylesheet" href="../css/button.css">
-            <link rel="stylesheet" href="../css/body.css">
-            <link rel="stylesheet" href="../css/header.css">
+            <script src="../js/include1.js" data-path="../"></script>
         </head>
         <body>
             <h1 class="title">Home</h1>
             <h2 class="sub-title">Documentation for the Superior Frc Repository</h2>
-            <span style="margin-top: 100px;"></span>
-            <button class="medium-button tight-bottom nav-button">Rules</button><br>
-            <button class="medium-button tight nav-button">SFRC Documentation</button><br>
-            <button class="medium-button tight-top nav-button">How To Document</button><br>
-            <script src="../js/home.js"></script>
+            <button class="tight-bottom">Rules</button><br>
+            <button class="tight">SFRC Documentation</button><br>
+            <button class="tight-top">How To Document</button><br>
         </body>
     </html>
+<script>
+    const anchors = [
+        './rules.html',
+        './sfrc/sfrc.html',
+        './howto/home.html',
+    ];
+    const buttons = document.getElementsByTagName('button');
+    let array = Array.from(buttons);
+    array.forEach((button, index) => {
+        button.addEventListener("click", function() {
+            window.location.href = anchors[index];
+        });
+    });
+</script>

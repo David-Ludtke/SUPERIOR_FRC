@@ -1,20 +1,4 @@
-.small-button {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 15px;
-    font-style: normal;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 0px;
-    padding: 5px 10px;
-    min-width: 100px;
-    min-height: 30px;
-    border: none;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-.medium-button {
+button {
     font-family: inherit;
     font-weight: 700;
     font-size: 30px;
@@ -29,6 +13,14 @@
     border: none;
     border-radius: 7px;
     box-sizing: border-box;
+    background-color: grey;
+    color: #FBF7F5;
+    cursor: pointer; 
+    transition: background-color 0.1s, color 0.1s;
+}
+button:hover {
+    background-color: rgb(66, 66, 66);
+    color: rgb(151, 151, 151);
 }
 .tight {
     margin-top: 5px;
@@ -39,14 +31,4 @@
 }
 .tight-bottom {
     margin-bottom: 5px;
-}
-.nav-button {
-    background-color: grey;
-    color: #FBF7F5;
-    cursor: pointer; 
-    transition: background-color 0.1s, color 0.1s;
-}
-.nav-button:hover {
-    background-color: rgb(66, 66, 66);
-    color: rgb(151, 151, 151);
 }
