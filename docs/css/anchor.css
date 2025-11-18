@@ -6,3 +6,11 @@
     text-decoration: underline;
     cursor: pointer;
 }
+.default {
+    text-decoration: none;
+    color: inherit
+}
+.default:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,46 @@
+active = [
+    css = [
+        "anchor.html",
+        "body.html",
+        "button.html",
+        "header.css",
+        "list.css",
+        "whatis.css",
+    ],
+    html = [
+        howto = [
+            "home.html",
+        ],
+        sfrc = [
+            "sfrc.html",
+        ],
+        whatis = []
+        "home.html",
+        "rules.html",
+    ],
+    js = [
+        "include1.js",
+        "include2.js",
+    ],
+    "start.html",
+]
+inactive = [
+    css = [
+        "paragraph.css",
+    ],
+    html = [
+        howto = [
+            "documentation-setup.html",
+            "documenting-class.html",
+            "documenting-function.html",
+            "documenting-namespace.html",
+        ],
+        sfrc = [],
+        whatis = [
+            "aclass.html",
+            "afunction.html",
+            "anamespace.html",
+        ],
+    ],
+    js = [],
+]
