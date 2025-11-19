@@ -6,7 +6,6 @@ ul {
 ul li {
     font-size: 25px;
     margin-left: 40px;
-    color: rgb(197, 159, 159);
     position: relative;
 }
 ol {
@@ -16,20 +15,13 @@ ol {
 ol li {
     font-size: 25px;
     margin-left: 40px;
-    color: rgb(197, 159, 159);
+    margin-bottom: 10px;
     position: relative;
 }
 ul li::before {
     content: "•";
-    color: rgb(197, 159, 159);
     font-size: 25px; 
     position: absolute;
     left: -20px;
     top: 0;
-}
-.first {
-    margin-top: 5px;
-}
-.last {
-    margin-bottom: 0px;
 }
