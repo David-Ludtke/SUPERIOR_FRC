@@ -4,3 +4,15 @@ body {
     color: rgb(197, 159, 159);
     font-family: 'Ubuntu';
 }
+body::-webkit-scrollbar {
+    background-color: transparent;
+    width: 20px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(197, 159, 159);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #FBF7F5;
+    border-radius: 10px;
+}
