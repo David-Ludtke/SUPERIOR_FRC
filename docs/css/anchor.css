@@ -1,16 +1,16 @@
-.signiture {
+a.signiture {
     text-decoration: none;
     color:green;
 }
-.signiture:hover {
+a.signiture:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-.default {
+a {
     text-decoration: none;
     color: inherit
 }
-.default:hover {
+a:hover {
     text-decoration: underline;
     cursor: pointer;
 }

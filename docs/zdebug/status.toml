@@ -3,12 +3,15 @@ active = [
         "anchor.html",
         "body.html",
         "button.html",
+        "codeblocks.css",
         "header.css",
         "list.css",
+        "paragraph.css",
         "whatis.css",
     ],
     html = [
         howto = [
+            "documentation-setup.html",
             "home.html",
         ],
         sfrc = [
@@ -25,12 +28,9 @@ active = [
     "start.html",
 ]
 inactive = [
-    css = [
-        "paragraph.css",
-    ],
+    css = [],
     html = [
         howto = [
-            "documentation-setup.html",
             "documenting-class.html",
             "documenting-function.html",
             "documenting-namespace.html",
@@ -43,4 +43,24 @@ inactive = [
         ],
     ],
     js = [],
+]
+testing = [
+    codeblocks = [
+        objective = "make working codeblocks for the documentation",
+        effecting = "<code>",
+        started = "11/18/2025",
+        status = "deployed partial-complete",
+    ],
+    filesystem = [
+        objective = "make working filesytem blocks for the documentation",
+        effecting = "<code class='fs'>",
+        started = "-/-/-",
+        status = "",
+    ]
+    paragraph = [
+        objective = "make nice looking paragraph text for the documentation",
+        effecting = "<p>",
+        started = "11/19/2025",
+        status = "deployed partial-complete",
+    ],
 ]

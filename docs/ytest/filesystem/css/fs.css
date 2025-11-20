@@ -1,0 +1,25 @@
+ul.fs-base {
+    font-size: medium;
+    margin-left: 10px;
+    margin-top: 0px;
+    border-style:solid;
+    border-width:thick;
+    border-radius: 20px;
+    border-color:darkslategrey;
+    padding: 10px;
+    width: 40%;
+    background-color:dimgrey;
+    color: whitesmoke;
+    display: block;
+    overflow-wrap:break-word;
+    list-style-type: none;
+}
+ul.fs {
+    list-style-type: none;
+}
+ul.fs-base::before {
+    content: "├──";
+}
+ul.fs::before {
+    content: "├──";
+}

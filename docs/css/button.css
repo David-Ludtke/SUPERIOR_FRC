@@ -22,13 +22,13 @@ button:hover {
     background-color: rgb(66, 66, 66);
     color: rgb(151, 151, 151);
 }
-.tight {
+button.tight {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.tight-top {
+button.tight-top {
     margin-top: 5px;
 }
-.tight-bottom {
+button.tight-bottom {
     margin-bottom: 5px;
 }

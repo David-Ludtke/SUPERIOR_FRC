@@ -1,20 +1,27 @@
-.title {
+h1 {
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 70px;
     font-style: normal;
-    color:rgb(197, 159, 159);
     margin-top: 25px;
     margin-bottom: 0px;
     margin-left: 10px;
 }
-.sub-title {
+h2 {
     font-family: inherit;
     font-weight: 500;
     font-size: 30px;
     font-style: normal;
-    color:rgb(197, 159, 159);
     margin-top: 25px;
     margin-bottom: 0px;
     margin-left: 10px;
+}
+h3 {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 25px;
+    font-style: normal;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 15px;
 }
