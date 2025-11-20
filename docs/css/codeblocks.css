@@ -13,9 +13,18 @@ code {
     background-color:darkslategrey;
     color: whitesmoke;
     display: block;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
-code::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar {
+    background-color: none;
+    border:none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: dimgray;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }

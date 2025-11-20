@@ -12,7 +12,10 @@ const includes = [
     'paragragh.css',
     'whatis.css',
 ];
-let include = ['<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">']; 
+let include = [
+    '<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">',
+    '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
+]; 
 
 includes.forEach(function(item) {
     include.push('<link rel="stylesheet" href="' + path + 'css/' + item + '">');
