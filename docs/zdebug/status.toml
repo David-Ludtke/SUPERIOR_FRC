@@ -26,6 +26,7 @@ active = [
         "include2.js",
     ],
     "start.html",
+    "robots.txt"
 ]
 inactive = [
     css = [],
