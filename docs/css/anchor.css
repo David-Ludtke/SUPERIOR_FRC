@@ -1,16 +1,46 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+}
+a.function {
+    color: blue;
+    font-weight: 700;
+    text-decoration: none;
+}
+a.namespace {
+    color: orangered;
+    font-weight: 700;
+    text-decoration: none;
+}
+a.class {
+    color: burlywood;
+    font-weight: 700;
+    text-decoration: none;
+}
+a.function:hover {
+    text-decoration: underline;
+}
+a.namespace:hover {
+    text-decoration: underline;
+}
+a.class:hover {
+    text-decoration: underline;
+}
 a.signiture {
     text-decoration: none;
     color:green;
 }
 a.signiture:hover {
     text-decoration: underline;
-    cursor: pointer;
-}
-a {
-    text-decoration: none;
-    color: inherit
-}
-a:hover {
-    text-decoration: underline;
-    cursor: pointer;
 }
