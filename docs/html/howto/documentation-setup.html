@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>How Documentation is Setup</title>
+        </head>
+        <body>
+            <script src="../../js/include1.js" data-path="../../"></script>
+            <h1>How the Documentation is Setup</h1>
+            <h2>File System:</h2>
+<pre><code>docs/
+|-css/
+| |-anchor.css
+| |-body.css
+| |-button.css
+| |-codeblocks.css
+| |-header.css
+| |-list.css
+| |=whatis.css
+|-html/
+| |-howto/
+| | |-documentation-setup.html
+| | |-documenting-class.html
+| | |-documenting-function.html
+| | |-documenting-namespace.html
+| | |=home.html
+| |-sfrc/
+| | |=our source code/=
+| |-whatis/
+| | |-aclass.html
+| | |-afunction.html #sdddddddddddddddddddddddddddddWQWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+| | |=anamespace.html
+| |-home.html
+| |=rules.html
+|-js/
+| |-include1.js
+| |=include2.js
+|-ytest/
+| |=example-test/
+| | |-css/
+| | | |=test-css.css
+| | |-html/
+| | | |=test-css.html
+| | |-js/
+| | | |=test-js.js
+| | |=zdebug/
+| | | |=status.toml
+|-zdebug/
+| |=status.toml
+|-gotohome.html
+|=robots.txt</code></pre>
+            <h2>How it's Orginized: (all folder's are clickable links)</h2>
+            <h3 id="css-folder">css folder:</h3>
+            <p>
+                The css folder is located in the docs directory for ease of use. You will
+                not mannually need to fetch file's from here because the helper scripts in
+                the js folder do it for you. This file contains all the styling you will
+                need to document and should not be touched for that reason.
+            </p>
+            <h3 id="home-folder">html folder:</h3>
+            <p>
+                The html folder contains all of the actual documentation and therefore
+                is the largest folder in docs. It contains the sub folder's: <a><b>howto/</b></a>, 
+                <a><b>sfrc/</b></a>, and <a href="#"><b>whatis/</b></a>. The howto/ folder is what you are in right
+                now it is the place to learn how to document. The sfrc/ folder contains all
+                the information on the documentation. The whatis/ folder contains definition's
+                on the words namespace, function, and class.
+            </p>
+            <h3 id="js-folder">js folder:</h3>
+            <p>
+                This folder contains the JavaScript and is seperated into 2
+                files include1 and include2. these files  
+            </p>
+            <h3 id="ytext-folder">ytext folder:</h3>
+            <p>
+
+            </p>
+            <h3 id="zdebug-folder">zdebug folder:</h3>
+            <p>
+                This folder contains all activly mintained files and what aren't mintained
+                it also contains all active tests in the ytext/ folder and contains there
+                status. This is held in a toml folder.
+            </p>
+            <h3 id="-gotohome.html">gotohome file</h3>
+            <p>
+                this file is just a way to let accessing the home file easier.
+            </p>
+            <script src="../../js/include2.js"></script>
+        </body>
+    </html>

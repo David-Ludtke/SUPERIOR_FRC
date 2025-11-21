@@ -1,0 +1,66 @@
+active = [
+    css = [
+        "anchor.html",
+        "body.html",
+        "button.html",
+        "codeblocks.css",
+        "header.css",
+        "list.css",
+        "paragraph.css",
+        "whatis.css",
+    ],
+    html = [
+        howto = [
+            "documentation-setup.html",
+            "home.html",
+        ],
+        sfrc = [
+            "sfrc.html",
+        ],
+        whatis = []
+        "home.html",
+        "rules.html",
+    ],
+    js = [
+        "include1.js",
+        "include2.js",
+    ],
+    "start.html",
+]
+inactive = [
+    css = [],
+    html = [
+        howto = [
+            "documenting-class.html",
+            "documenting-function.html",
+            "documenting-namespace.html",
+        ],
+        sfrc = [],
+        whatis = [
+            "aclass.html",
+            "afunction.html",
+            "anamespace.html",
+        ],
+    ],
+    js = [],
+]
+testing = [
+    codeblocks = [
+        objective = "make working codeblocks for the documentation",
+        effecting = "<code>",
+        started = "11/18/2025",
+        status = "deployed partial-complete",
+    ],
+    filesystem = [
+        objective = "make working filesytem blocks for the documentation",
+        effecting = "<code class='fs'>",
+        started = "-/-/-",
+        status = "",
+    ]
+    paragraph = [
+        objective = "make nice looking paragraph text for the documentation",
+        effecting = "<p>",
+        started = "11/19/2025",
+        status = "deployed partial-complete",
+    ],
+]
