@@ -1,0 +1,45 @@
+let path = new String();
+{let fullpath = document.currentScript.getAttribute('src');
+const index = fullpath.indexOf('j');
+if (index !== -1) {
+    path = fullpath.slice(0, index);
+}}
+let html = document.createElement('html');
+let head = document.createElement('head');
+let title = document.createElement('title');
+let favicon = document.createElement('link');
+let encoding = document.createElement('meta');
+let headcss = document.createElement('link');
+let bodycss = document.createElement('link');
+let buttoncss = document.createElement('link');
+let body = document.createElement('body');
+let home = document.createElement('button');
+let titlemessage = document.createElement('h1');
+html.setAttribute('lang', 'en');
+title.textContent = "Page Not Done";
+favicon.setAttribute('rel', 'icon');
+favicon.setAttribute('href', path + 'img/SUPERIOR FRC.png');
+favicon.setAttribute('type', 'image/png');
+encoding.setAttribute('charset', 'utf-8');
+headcss.setAttribute('rel', 'stylesheet');
+headcss.setAttribute('href', path + 'css/header.css');
+bodycss.setAttribute('rel', 'stylesheet');
+bodycss.setAttribute('href', path + 'css/body.css');
+buttoncss.setAttribute('rel', 'stylesheet');
+buttoncss.setAttribute('href', path + 'css/button.css');
+home.textContent = "Home";
+titlemessage.textContent = "Page Is Not Done Yet";
+home.addEventListener('click', function() {
+    window.location.href = path + 'html/home.html';
+});
+head.appendChild(title);
+head.appendChild(favicon);
+head.appendChild(encoding);
+head.appendChild(headcss);
+head.appendChild(bodycss);
+head.appendChild(buttoncss);
+body.appendChild(home);
+body.appendChild(titlemessage);
+html.appendChild(head);
+html.appendChild(body);
+document.replaceChild(html, document.documentElement);
