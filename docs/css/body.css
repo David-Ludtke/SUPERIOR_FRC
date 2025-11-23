@@ -3,6 +3,7 @@ body {
     background-color: #FBF7F5;
     color: rgb(197, 159, 159);
     font-family: 'Ubuntu';
+    display: none;
 }
 body::-webkit-scrollbar {
     background-color: transparent;
@@ -15,4 +16,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
     background-color: #FBF7F5;
     border-radius: 10px;
+}
+body.display {
+    display: block;
 }

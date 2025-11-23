@@ -45,7 +45,10 @@ if (document.getElementById('no-home-button') == null) {
     });
 }
 document.addEventListener('DOMContentLoaded', () => {
-    if (document.getElementById("no-items") != null) {return;} //exclude pages that 
+    if (document.getElementById("no-items") != null) {
+        document.body.classList.add('display');
+        return;
+    } //exclude pages that 
     // don't contain anything and/or don't want to be included
     let list = document.getElementsByTagName('ul').item(0);
     let elements = Array.from(document.getElementsByTagName('li'));
@@ -68,4 +71,5 @@ document.addEventListener('DOMContentLoaded', () => {
         frag.appendChild(listitem);
     });
     list.replaceWith(frag);
+    document.body.classList.add('display');
 });}

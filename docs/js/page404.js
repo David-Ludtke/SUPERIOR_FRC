@@ -32,6 +32,7 @@ titlemessage.textContent = "Page Is Not Done Yet";
 home.addEventListener('click', function() {
     window.location.href = path + 'html/home.html';
 });
+body.classList.add('display');
 head.appendChild(title);
 head.appendChild(favicon);
 head.appendChild(encoding);
