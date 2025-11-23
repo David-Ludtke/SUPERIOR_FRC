@@ -17,7 +17,6 @@ button {
     background-color: grey;
     color: #FBF7F5;
     cursor: pointer; 
-    transition: background-color 0.1s, color 0.1s;
 }
 button:hover {
     background-color: rgb(66, 66, 66);
