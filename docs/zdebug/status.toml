@@ -15,17 +15,23 @@ active = [
             "home.html",
         ],
         sfrc = [
+            exampleclass = [],
+            examplens = [],
             "sfrc.html",
         ],
         whatis = []
         "home.html",
         "rules.html",
     ],
+    img = [
+        "SUPERIOR FRC.png"
+    ]
     js = [
-        "include1.js",
-        "include2.js",
+        "include.js"
+        "page404.js"
     ],
     "start.html",
+    "robots.txt"
 ]
 inactive = [
     css = [],
@@ -35,7 +41,15 @@ inactive = [
             "documenting-function.html",
             "documenting-namespace.html",
         ],
-        sfrc = [],
+        sfrc = [
+            exampleclass = [
+                "exampleclass.html"
+            ],
+            examplens = [
+                "examplens.html"
+            ],
+            "void examplefn(int(ptr) num).html
+        ],
         whatis = [
             "aclass.html",
             "afunction.html",
