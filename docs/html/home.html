@@ -11,19 +11,6 @@
             <button class="top">Rules</button><br>
             <button>SFRC Documentation</button><br>
             <button class="bottom">How To Document</button><br>
+            <script src="../js/morebuttons.js" data-anchor="./rules.html;./sfrc/sfrc.html;./howto/home.html"></script>
         </body>
     </html>
-<script>
-    const anchors = [
-        './rules.html',
-        './sfrc/sfrc.html',
-        './howto/home.html',
-    ];
-    const buttons = document.getElementsByTagName('button');
-    let array = Array.from(buttons);
-    array.forEach((button, index) => {
-        button.addEventListener("click", function() {
-            window.location.href = anchors[index];
-        });
-    });
-</script>

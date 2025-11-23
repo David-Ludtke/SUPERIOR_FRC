@@ -1,75 +1,77 @@
-var path;
-{let fullpath = document.currentScript.getAttribute('src');
-const index = fullpath.indexOf('j');
-if (index !== -1) {
-    path = fullpath.slice(0, index);
-}
-let fragment = document.createDocumentFragment();
-const includeHref = [
-    'anchor.css',
-    'body.css',
-    'button.css',
-    'codeblocks.css',
-    'header.css',
-    'list.css',
-    'paragraph.css',
-];
-includeHref.forEach((val, _) => {
-    let nelement = document.createElement('link');
-    nelement.setAttribute('rel', 'stylesheet');
-    nelement.setAttribute('href', `${path}css/${val}`); 
-    fragment.appendChild(nelement);
-});
-let viewport = document.createElement('meta');
-let favicon = document.createElement('link');
-let font = document.createElement('link');
-viewport.setAttribute('name', 'viewport');
-viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
-fragment.appendChild(viewport);
-font.setAttribute('href', 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-font.setAttribute('rel', 'stylesheet');
-fragment.appendChild(font);
-favicon.setAttribute('rel', 'icon');
-favicon.setAttribute('href', `${path}img/SUPERIOR FRC.png`);
-favicon.setAttribute('type', 'image/png');
-document.head.appendChild(fragment);
-document.head.setAttribute('lang', 'en');
-if (document.getElementById('no-home-button') == null) {
-    let button = document.createElement('button');
-    button.setAttribute('class', 'tight');
-    button.setAttribute('style', 'margin-left: 5px');
-    button.textContent = 'Home';
-    document.body.appendChild(button);
-    button.addEventListener('click', function() {
-        window.location.href = path + 'html/home.html';
+(() => {
+    const fullpath = document.currentScript.getAttribute('src');
+    let path = fullpath.slice(0, fullpath.indexOf('j') - 1);
+    const fragment = document.createDocumentFragment();
+    const includeHref = [
+        'anchor.css',
+        'body.css',
+        'button.css',
+        'codeblocks.css',
+        'header.css',
+        'list.css',
+        'paragraph.css',
+    ];
+    includeHref.forEach((val, _) => {
+        const nelement = document.createElement('link');
+        nelement.rel = 'stylesheet';
+        nelement.href = `${path}/css/${val}`;
+        fragment.appendChild(nelement);
     });
-}
-document.addEventListener('DOMContentLoaded', () => {
-    if (document.getElementById("no-items") != null) {
+    const viewport = document.createElement('meta');
+    const favicon = document.createElement('link');
+    const font = document.createElement('link');
+    viewport.name = 'viewport';
+    viewport.content = 'width=device-width, initial-scale=1.0';
+    fragment.appendChild(viewport);
+    font.href = 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap';
+    font.rel = 'stylesheet';
+    fragment.appendChild(font);
+    favicon.rel = 'icon';
+    favicon.href = `${path}/img/SUPERIOR FRC.png`;
+    favicon.type = 'image/icon';
+    document.head.appendChild(fragment);
+    document.documentElement.lang = 'en';
+    if (document.getElementById('no-home-button') === null) {
+        const button = document.createElement('button');
+        button.style.marginLeft = '5px';
+        button.textContent = 'Home';
+        document.body.appendChild(button);
+        button.addEventListener('click', function() {
+            window.location.href = path + '/html/home.html';
+        });
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        if (document.getElementById("no-items") !== null) {
+            document.body.classList.add('display');
+            return;
+        } //exclude pages that don't contain anything and/or don't want to be included
+        const list = document.querySelector('ul');
+        const elements = Array.from(document.getElementsByTagName('li'));
+        const frag = document.createElement('ul');
+        elements.forEach((node, _) => {
+            const classtype = node.getAttribute('class');
+            const listitem = document.createElement('li');
+            const type = document.createElement('a');
+            const space = document.createTextNode(' ');
+            const name = document.createElement('a');
+            type.href = `${path}/html/whatis/a${classtype}.html`;
+            type.className = classtype;
+            type.textContent = classtype;
+            name.className = 'signiture';
+            if (classtype === 'function') {
+                const replace = node.textContent.replaceAll('*', '(ptr)');
+                name.href = `./${replace}.html`;
+            }
+            else {
+                name.href = `./${node.textContent}/${node.textContent}.html`;
+            }
+            name.textContent = node.textContent;
+            listitem.appendChild(type);
+            listitem.appendChild(space);
+            listitem.appendChild(name);
+            frag.appendChild(listitem);
+        });
+        list.replaceWith(frag);
         document.body.classList.add('display');
-        return;
-    } //exclude pages that 
-    // don't contain anything and/or don't want to be included
-    let list = document.getElementsByTagName('ul').item(0);
-    let elements = Array.from(document.getElementsByTagName('li'));
-    let frag = document.createElement('ul');
-    elements.forEach((node, _) => {
-        let classtype = node.getAttribute('class');
-        let listitem = document.createElement('li');
-        let type = document.createElement('a');
-        let space = document.createTextNode(' ');
-        let name = document.createElement('a');
-        type.setAttribute('href', `${path}html/whatis/a${classtype}.html`);
-        type.setAttribute('class', classtype);
-        type.textContent = classtype;
-        name.setAttribute('class', 'signiture');
-        name.setAttribute('href', node.getAttribute('href'));
-        name.textContent = node.textContent;
-        listitem.appendChild(type);
-        listitem.appendChild(space);
-        listitem.appendChild(name);
-        frag.appendChild(listitem);
     });
-    list.replaceWith(frag);
-    document.body.classList.add('display');
-});}
+})()
