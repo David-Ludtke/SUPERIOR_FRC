@@ -11,21 +11,6 @@
             <button>how to document a class</button><br>
             <button>how to document a function</button><br>
             <button class="bottom">how to document a namespace</button><br>
-            <script>
-                const anchors = [
-                    './documentation-setup.html',
-                    './documenting-class.html',
-                    './documenting-function.html',
-                    './documenting-namespace.html',
-                ];
-                const buttons = document.getElementsByTagName('button');
-                let array = Array.from(buttons);
-                array.shift();
-                array.forEach((button, index) => {
-                    button.addEventListener("click", function() {
-                        window.location.href = anchors[index];
-                    });
-                });
-            </script>
+            <script src="../../js/morebuttons.js" data-anchor="./documentation-setup.html;documenting-class.html;./documenting-function.html;./documenting-namespace.html"></script>
         </body>
     </html>
